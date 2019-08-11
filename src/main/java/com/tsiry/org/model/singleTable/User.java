@@ -17,7 +17,7 @@ import javax.persistence.InheritanceType;
  * http://objis.com/tutoriel-jpa-n6-mapping-dheritage-avec-jpa/
  */
 @Entity
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE) //les champs des classes filles seront ajouté dans cette table
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="TYPE_USER") // pour differencier
 @DiscriminatorValue("USER_NO_ROLE")
 public abstract class User {
